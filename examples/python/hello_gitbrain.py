@@ -53,7 +53,7 @@ def main() -> int:
                 # naive pull
                 import re
 
-                m = re.search(rf'"{key}"\s*:\s*"([^"]+)"', text)
+                m = re.search(rf'"{key}"\\s*:\\s*"([^"]+)"', text)
                 if m:
                     session_id = m.group(1)
                     break
@@ -69,7 +69,7 @@ def main() -> int:
                 "files": [
                     {
                         "path": "notes/adopt-python.md",
-                        "content": "# Hello from Python adopt kit\n",
+                        "content": "# Hello from Python adopt kit\\n",
                     }
                 ],
             },
