@@ -13,8 +13,8 @@ Keep the same SoT rules as chat. Change **delivery**, not policy.
 
 1. “Checking GitBrain whoami.”
 2. “Mounting Campus.”
-3. “Session started: &lt;short id&gt;.”
-4. If writing: “I’ll propose &lt;path&gt;. Confirm?”
+3. “Session started: <short id>.”
+4. If writing: “I’ll propose <path>. Confirm?”
 5. Close: “Proposal staged. Human merge needed for Campus.”
 
 ## Dual-interpretation trap (say this if confused)
