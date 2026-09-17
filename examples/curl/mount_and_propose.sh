@@ -8,7 +8,6 @@ echo "== mount_capsule =="
 MOUNT=$(curl -sS -X POST "$GB_MCP_URL" "${auth[@]}" \
   -d '{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"mount_capsule","arguments":{}}}')
 echo "$MOUNT"
-# Best-effort extract session_id (jq optional)
 SESSION_ID=$(echo "$MOUNT" | sed -n 's/.*"session_id"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' | head -1)
 if [[ -z "${SESSION_ID}" ]]; then
   echo "Could not parse session_id — inspect mount JSON above." >&2
